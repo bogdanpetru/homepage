@@ -1,31 +1,25 @@
 function writeSlow(selector, string, speed){
-    var el = document.querySelector(selector),
-        stringLength = string.length,
-        i = 0;
+  var el = document.querySelector(selector);
+  var stringLength = string.length;
   
-   function write(){
-      var text =  el.textContent,
-          newText = text + string[i];
+ function write(){
+  var text =  el.textContent;
+  var newText;
 
-      el.textContent = newText;
-      i++;
-     
-     if(i < stringLength){  
-       setTimeout(function(){
-         write();
-       }, speed);
-     }
-   }
+  if(text.length === stringLength){
+    return 'it is done';
+  }
+
+  newText = text + string[text.length];
+  el.textContent = newText;
+   
+   setTimeout(write, speed);
+ }
   
   write();
 }
 
-window.addEventListener("load", function(){
-
-    setTimeout(function(){
-      var string = "hello... you can write me at: bogdanpintican@gmail.com";
-     
-      writeSlow(".someText", string, 100);
-    }, 1000);
-
-});
+setTimeout(function(){
+  var string = "hello... you can write me at: bogdanpintican@gmail.com";
+  writeSlow(".someText", string, 50);
+}, 1000);

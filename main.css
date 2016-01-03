@@ -1,9 +1,9 @@
-body{
+body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
   font-family: inherit;
   font-weight: 700;
   margin-bottom: 15px;
@@ -17,23 +17,32 @@ h5 { font-size: .83em; }
 h6 { font-size: .75em; }
 
 
-header{
+header {
   padding-top: 100px;
   text-align: center;
 }
 
-header img{
+header img {
   margin-bottom: 100px;
-  transition: 1s all ease;
+  transition: 2s transform ease;
   border-radius: 50%;
 }
 
-header img:hover{
-  transform: rotateY(20deg);
+.img-wrapper {
+    height:  250px;
 }
 
-body{
+.img-wrapper:hover img {
+  transform: rotateY(40deg);
+}
+
+body {
   perspective: 1000px;
+}
+
+a {
+  color: #777;
+  /*text-decoration: none*/
 }
 
 @-webkit-keyframes blink {

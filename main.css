@@ -1,0 +1,62 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: inherit;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+h1 { font-size: 2em;  margin-bottom: 100px;}
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
+h5 { font-size: .83em; }
+h6 { font-size: .75em; }
+
+
+header{
+  padding-top: 100px;
+  text-align: center;
+}
+
+header img{
+  margin-bottom: 100px;
+  transition: 1s all ease;
+  border-radius: 50%;
+}
+
+header img:hover{
+  transform: rotateY(20deg);
+}
+
+body{
+  perspective: 1000px;
+}
+
+@-webkit-keyframes blink {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes blink {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes blink {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes blink {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+.blink{
+  -webkit-animation: blink 0.6s infinite; /* Safari 4+ */
+  -moz-animation:    blink 0.6s infinite; /* Fx 5+ */
+  -o-animation:      blink 0.6s infinite; /* Opera 12+ */
+  animation:         blink 0.6s infinite; /* IE 10+, Fx 29+ */
+}

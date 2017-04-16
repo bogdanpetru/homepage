@@ -1,6 +1,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -10,39 +11,28 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
 }
 
-h1 { font-size: 2em;  margin-bottom: 100px;}
+h1 { font-size: 2em;  margin-bottom: 30px;}
 h2 { font-size: 1.5em; }
 h3 { font-size: 1.17em; }
 h5 { font-size: .83em; }
 h6 { font-size: .75em; }
 
-
-header {
-  padding-top: 100px;
-  text-align: center;
-}
-
-header img {
-  margin-bottom: 100px;
+.img-wrapper img {
   transition: 2s transform ease;
   border-radius: 50%;
-}
-
-.img-wrapper {
-    height:  250px;
 }
 
 .img-wrapper:hover img {
   transform: rotateY(40deg);
 }
 
-body {
-  perspective: 1000px;
-}
-
 a {
   color: #777;
   /*text-decoration: none*/
+}
+
+.container {
+  padding-top: 50px;
 }
 
 @-webkit-keyframes blink {

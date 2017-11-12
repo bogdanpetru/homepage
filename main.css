@@ -47,7 +47,11 @@ a {
 }
 
 .notice {
-  text-align: center;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background: #dadada;
+    padding: 5px 10px;
 }
 
 @-webkit-keyframes blink {

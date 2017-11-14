@@ -20,6 +20,6 @@ function writeSlow(selector, string, speed){
 }
 
 setTimeout(function(){
-  var string = "... you can write me at: bogdanpintican@gmail.com";
+  var string = "... hello";
   writeSlow(".someText", string, 50);
 }, 1000);

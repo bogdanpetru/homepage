@@ -1,7 +1,7 @@
 function writeSlow(selector, string, speed){
   var el = document.querySelector(selector);
   var stringLength = string.length;
-  
+
  function write(){
   var text =  el.textContent;
   var newText;
@@ -12,14 +12,14 @@ function writeSlow(selector, string, speed){
 
   newText = text + string[text.length];
   el.textContent = newText;
-   
+
    setTimeout(write, speed);
  }
-  
+
   write();
 }
 
 setTimeout(function(){
   var string = "bogdanpintican@gmail.com";
-  writeSlow(".someText", string, 50);
+  writeSlow(".some-text", string, 50);
 }, 1000);

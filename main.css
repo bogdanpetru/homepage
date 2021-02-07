@@ -5,19 +5,13 @@ body {
   line-height: 1.4;
 }
 
-/* h1, h2, h3, h4, h5, h6 {
-  font-family: inherit;
-  font-weight: 900;
-  margin-bottom: 15px;
-  margin-top: 0;
-  text-align: center;
+header {
+  margin-bottom: 50px;
 }
 
-h1 { font-size: 2em;  margin-bottom: 20px;}
-h2 { font-size: 1.5em; }
-h3 { font-size: 1.17em; }
-h5 { font-size: .83em; }
-h6 { font-size: .75em; } */
+header img {
+  margin-bottom: 30px;
+}
 
 a {
   color: #ef3521;
@@ -47,7 +41,8 @@ li {
   transform: rotateY(180deg);
 }
 
-header {
+
+{
   padding-top: 50px;
   margin-bottom: 30px;
   text-align: center;
@@ -55,7 +50,7 @@ header {
 
 main {
   margin: 0 auto;
-  max-width: 640px;
+  max-width: 524px;
   padding: 0 20px;
 }
 

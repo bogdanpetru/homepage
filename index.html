@@ -16,44 +16,83 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <header>
-      <img
-        src="https://avatars2.githubusercontent.com/u/6267231?s=460"
-        class="img-circle avatar"
-        width="150px"
-      />
-      <ul>
-        <li>
-          <a target="_blank" href="https://github.com/bogdanpetru">Github</a>
-        </li>
-        <li>
-          <a target="_blank" href="https://linkedin.com/in/bogdanppetru"
-            >Linkedin</a
-          >
-        </li>
-        <li>
-          <a target="_blank" href="mailto:ac0ydhtf0@mozmail.com">Email</a>
-        </li>
-      </ul>
-    </header>
+    <div class="mesh-loader">
+      <div class="set-one">
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+      <div class="set-two">
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
 
-    <main>
-      <p>
-        Hello, I am <strong>Petru</strong>, a self-taught
-        <strong>JavaScript developer</strong> who likes to build beautiful
-        <i>user interfaces</i> using <b>ReactJs</b>.
-      </p>
-      <p>
-        I work as a front-end developer since 2014, since then I've worked on
-        many projects ranging from simple static-interfaces to fully fledged web
-        applications.
-      </p>
-      <p>
-        I have both the experience of working on small projects, in small teams,
-        and working in a corporate environment, with a well-defined development
-        process and high-quality coding standards.
-      </p>
-    </main>
+    <div style="display: none" class="content-wrapper">
+      <header>
+        <img
+          src="https://avatars2.githubusercontent.com/u/6267231?s=460"
+          class="img-circle avatar"
+        />
+        <ul class="links-list">
+          <li>
+            <a target="_blank" href="https://github.com/bogdanpetru">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://linkedin.com/in/bogdanppetru"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 8c0 .557-.447 1.008-1 1.008s-1-.45-1-1.008c0-.557.447-1.008 1-1.008s1 .452 1 1.008zm0 2h-2v6h2v-6zm3 0h-2v6h2v-2.861c0-1.722 2.002-1.881 2.002 0v2.861h1.998v-3.359c0-3.284-3.128-3.164-4-1.548v-1.093z"
+                /></svg
+            ></a>
+          </li>
+          <li>
+            <a target="_blank" href="mailto:bogdanppetru@gmail.com"
+              ><svg
+                width="24"
+                height="24"
+                xmlns="http://www.w3.org/2000/svg"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+              >
+                <path
+                  d="M24 23h-24v-13.275l2-1.455v-7.27h20v7.272l2 1.453v13.275zm-20-10.472v-9.528h16v9.527l-8 5.473-8-5.472zm14-.528h-12v-1h12v1zm0-3v1h-12v-1h12zm-7-1h-5v-3h5v3zm7 0h-6v-1h6v1zm0-2h-6v-1h6v1z"
+                /></svg
+            ></a>
+          </li>
+        </ul>
+      </header>
+
+      <main>
+        <p>
+          Hello, I am <strong>Petru</strong>, a self-taught
+          <strong>JavaScript developer</strong> who likes to build beautiful
+          <i>user interfaces</i> using <b>ReactJs</b>.
+        </p>
+      </main>
+    </div>
+    <script>
+      document.fonts.ready.then(() => {
+        const loader = document.querySelector(".mesh-loader");
+        const content = document.querySelector(".content-wrapper");
+        loader.style.display = "none";
+        content.style.display = "block";
+      });
+    </script>
   </body>
-  <script src="main.js"></script>
 </html>
